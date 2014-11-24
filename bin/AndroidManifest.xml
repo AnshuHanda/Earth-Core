@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.earth_core"
+    android:versionCode="2"
+    android:versionName="1.1" >
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme">
+        
+        <meta-data  android:name="com.google.android.maps.v2.API_KEY"
+   		 android:value="AIzaSyCnZ8I3ipspD08Wk0SIc5ATiLbLoGqz-So"/>
+        
+        
+        
+        <activity
+            android:name="com.example.earth_core.SplashScreen"
+              android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.earth_core.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme"/>
+        
+        <activity
+            android:name="com.example.earth_core.dialogore"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.example.earth_core.aboutus"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+  
+    <activity
+            android:name="com.example.earth_core.importexport"/>
+     <activity
+            android:name="com.example.earth_core.viewmaps"
+            />
+       <activity
+            android:name="com.example.earth_core.statedialogue1"
+            android:theme="@android:style/Theme.Dialog"/>
+      <activity
+            android:name="com.example.earth_core.impexpdialog"
+            android:theme="@android:style/Theme.Dialog"/>
+      <activity
+            android:name="com.example.earth_core.stategraph"/>
+      <activity
+            android:name="com.example.earth_core.lease"
+            android:windowSoftInputMode="stateHidden"/>
+      <activity
+            android:name="com.example.earth_core.lease_dialog"
+            android:theme="@android:style/Theme.Dialog"/>
+      <activity
+            android:name="com.example.earth_core.compare_minerals"
+            android:theme="@android:style/Theme.Dialog"/>
+       <activity
+            android:name="com.example.earth_core.state_production"/>
+         <activity
+            android:name="com.example.earth_core.state_production_compare"/>
+            <activity
+            android:name="com.example.earth_core.state_reserves"
+            android:windowSoftInputMode="stateHidden"/>
+              <activity
+            android:name="com.example.earth_core.state_registration"/>
+               <activity
+            android:name="com.example.earth_core.view_single_location"/>
+               <activity
+            android:name="com.example.earth_core.Settings"/>
+               <activity
+            android:name="com.example.earth_core.MainActivityList"
+             android:theme="@style/AppTheme"/>
+                 <activity
+            android:name="com.example.earth_core.ore_list_map1"
+             android:windowSoftInputMode="stateHidden"/>
+                
+    </application>
+
+</manifest>
